@@ -222,7 +222,7 @@ public class ImageGridAdapter extends BaseAdapter {
             File imageFile = new File(data.path);
             if (imageFile.exists()) {
                 // 显示图片
-                Picasso.with(mContext)
+                Picasso.get()
                         .load(imageFile)
                         .placeholder(R.drawable.mis_default_error)
                         .tag(MultiImageSelectorFragment.TAG)
